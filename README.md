@@ -1,5 +1,5 @@
 # AGEP_TWAS
-This repository provides tools for Gene Expression Prediction and conducting Transcriptome-Wide Association Study (TWAS). The main steps in the process include identifying target genes, splitting tissue-specific datasets, landmark gene extraction, model training, and running the PrediXcan prediction. These tools are designed to assist researchers in genetic and transcriptomic analysis.
+This repository provides tools for Adaptive Gene Expression Predictor for TWAS(AGEP_TWAS). The main steps in the process include identifying target genes, splitting tissue-specific datasets, landmark gene extraction, model training. 
 
 ## Directory Structure
 ```
@@ -18,10 +18,10 @@ This repository provides tools for Gene Expression Prediction and conducting Tra
 ### `dataset/`
 
 - **`get_target_gene.py`**  
-  This script identifies the target genes for each fold in the dataset. It processes the data, filters out the top genes, and selects the target genes that are shared across both the full gene set and the prediction gene set.
+  This script identifies the target genes for each fold in the dataset. 
 
 - **`tissuesplit.py`**  
-  This script splits the `cattlegtex` dataset into different tissue types, helping organize data for tissue-specific analysis, which is crucial for TWAS studies where tissue-specific gene expression is important.
+  This script splits the `cattleGTEx` dataset into different tissue types and helps organize data for tissue-specific analysis.
 
 ### Main Directory
 
@@ -29,7 +29,7 @@ This repository provides tools for Gene Expression Prediction and conducting Tra
   This script applies a non-linear feature extraction method (Autoencoder with DeepLIFT) to extract a specified number of landmark genes. The number of landmark genes can be customized via input parameters.
 
 - **`train.py`**  
-  This script is used for training the machine learning model. It includes the training pipeline, dataset loading, training process, and model evaluation.
+  It allows users to customize training by setting parameters such as the number of epochs, hidden layer size, and momentum size, among others.
 
 - **`Predict_for_Predixcan.py`**  
   This script provides functionality for running PrediXcan predictions. PrediXcan is based on the MetaXcan framework, which can be found [here](https://github.com/hakyimlab/MetaXcan).
@@ -39,6 +39,6 @@ This repository provides tools for Gene Expression Prediction and conducting Tra
 
 ### `gene_summary.csv`
 
-This file contains the results of the TWAS analysis. It includes a summary of the genes considered significant in the study. This file can be used to review the identified genes and their associated statistical metrics.
+This file contains the results of our TWAS analysis. It includes a summary of the genes considered significant in milk production. 
 
 ---
