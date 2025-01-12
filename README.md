@@ -3,7 +3,15 @@ This repository provides tools for Gene Expression Prediction and conducting Tra
 
 ## Directory Structure
 ```
-. ├── dataset/ <br> │ ├── get_target_gene.py # Identifies target genes for each fold <br> │ └── tissuesplit.py # Splits cattlegtex dataset into tissue types <br> ├── autoencoder_deeplift.py # Extracts landmark genes using Autoencoder + DeepLIFT <br> ├── train.py # Train the model <br> ├── Predict_for_Predixcan.py # PrediXcan prediction based on MetaXcan <br> ├── inference.py # Interface for selecting landmark genes for TWAS <br> ├── gene_summary.csv # TWAS results with significant genes <br>
+.
+├── dataset/
+│   ├── get_target_gene.py
+│   └── tissuesplit.py
+├── autoencoder_deeplift.py
+├── train.py
+├── Predict_for_Predixcan.py
+├── inference.py
+├── gene_summary.csv
 ```
 ## Files and Their Functions
 
