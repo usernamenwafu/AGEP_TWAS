@@ -2,7 +2,14 @@
 This repository provides tools for Gene Expression Prediction and conducting Transcriptome-Wide Association Study (TWAS). The main steps in the process include identifying target genes, splitting tissue-specific datasets, landmark gene extraction, model training, and running the PrediXcan prediction. These tools are designed to assist researchers in genetic and transcriptomic analysis.
 
 ## Directory Structure
-. ├── dataset/ │ ├── get_target_gene.py # Identifies target genes for each fold │ └── tissuesplit.py # Splits cattlegtex dataset into tissue types ├── autoencoder_deeplift.py # Extracts landmark genes using Autoencoder + DeepLIFT ├── train.py # Train the model ├── Predict_for_Predixcan.py # PrediXcan prediction based on MetaXcan ├── inference.py # Interface for selecting landmark genes for TWAS ├── gene_summary.csv # TWAS results with significant genes
+. ├── dataset/
+│ ├── get_target_gene.py # Identifies target genes for each fold
+│ └── tissuesplit.py # Splits cattlegtex dataset into tissue types
+├── autoencoder_deeplift.py # Extracts landmark genes using Autoencoder + DeepLIFT
+├── train.py # Train the model
+├── Predict_for_Predixcan.py # PrediXcan prediction based on MetaXcan
+├── inference.py # Interface for selecting landmark genes for TWAS
+├── gene_summary.csv # TWAS results with significant genes
 
 ## Files and Their Functions
 
