@@ -142,7 +142,7 @@ def main():
     contributions = []
     for data in test_dataloader:
         input_data = data[0]
-        contribution = deep_lift.attribute(input_data, target=2)
+        contribution = deep_lift.attribute(input_data)
         contributions.append(contribution.cpu().detach().numpy())
 
     average_contributions = np.mean(np.array(contributions), axis=0)
